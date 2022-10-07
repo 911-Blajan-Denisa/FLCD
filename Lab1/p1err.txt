@@ -15,4 +15,4 @@ main program
 
 
 —> dec not dek
-—> command not in |  |
+—> insturction not in |  |
