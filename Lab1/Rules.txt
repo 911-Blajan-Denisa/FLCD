@@ -1,0 +1,13 @@
+Rules:
+
+
+dek —> int
+lasa —> cin
+skriva —> cout
+if —> om
+else —> annan
+for —> now
+while —> medan
+= —> :=
+== —> IS
+“ ” —> /* */

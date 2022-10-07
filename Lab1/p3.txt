@@ -1,0 +1,26 @@
+P3. How many even and odd digits in the given n numbers.
+
+
+main program
+[
+	| dek nr, n, c, p, i, j |
+	| lasa n |
+	| now j := 1, j <= n, j := j + 1 |
+	[
+		| lasa nr |
+		| medan nr <> 0 |
+		[
+			| c := nr % 10 |
+
+			| om c % 2 IS 0 |
+			[
+				| p := p + 1 |
+			]
+
+			| annan i := i + 1 |
+			
+			| nr := nr / 10 |
+		]
+	]
+	| skriva p, /* */, i |
+]
