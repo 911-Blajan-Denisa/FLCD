@@ -1,0 +1,39 @@
+Syntax:
+
+program = main program "[" cmpdstmt "]"
+
+declaration = primary_types | array_type
+
+primary_types = type " " identifier
+
+primary_types = "int" | "bool" | "string" | "float"
+
+array_type = "array" "[" type "]" identifier
+
+cmpdstmt = "|" stmt "|" | "|" stmt "|" cmpdstmt
+
+stmt = simplstmt | structstmt
+
+simplstmt = assignstmt | iostmt | declaration
+
+structstmt = ifstmt | whilestmt | forstmt
+
+ifstmt = "om" condition cmpdstmt ["annan" cmpdstmt]
+
+forstmt = "now" "(" assignment; condition;  ")" cmpdstmt
+
+whilestmt = "medan" condition cmpdstmt
+
+assignstmt = IDENTIFIER ":=" expression
+
+expression = expression "+" term | expression "-" term | term
+
+term = term "*" factor | term "/" factor | factor
+
+factor = "(" expression ")" | identifier | constant
+
+iostmt = "lasa" "(" identifier ")"| "skriva" "(" identifier ")" | "skriva" "(" constant ")"
+
+condition = expression RELATION expression
+
+RELATION = "<" | "<=" | "is" | ">" | ">=" | "<>"
