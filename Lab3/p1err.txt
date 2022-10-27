@@ -1,0 +1,11 @@
+main program
+[
+	| dek n, x := 1, i, p := 1 |
+	lasa n;
+	| now i := 1, i <= n, i := i + 1 |
+	[
+		| p = p * x |
+		| x := x + 2 |
+	]
+	| skriva p |
+]

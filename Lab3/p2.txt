@@ -1,0 +1,18 @@
+main program
+[
+	| dek n, d, s := 0 |
+	| lasa n |
+	| now d := 1, d*d < n, d := d + 1 |
+	[
+		| om n % d IS 0 |
+		[
+			| s := s + d + n / d |
+		]
+
+		| om d * d IS n |
+		[
+			| s := s + d |
+		]
+	]
+	| skriva s |
+]
