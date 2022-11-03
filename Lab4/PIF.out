@@ -1,0 +1,58 @@
+main -> -1
+program -> -1
+[ -> -1
+| -> -1
+dek -> -1
+identifier -> (2, 0)
+, -> -1
+identifier -> (0, 0)
+:= -> -1
+constant -> (1, 0)
+, -> -1
+identifier -> (3, 0)
+, -> -1
+identifier -> (4, 0)
+:= -> -1
+constant -> (1, 0)
+| -> -1
+| -> -1
+lasa -> -1
+identifier -> (2, 0)
+| -> -1
+| -> -1
+now -> -1
+identifier -> (3, 0)
+:= -> -1
+constant -> (1, 0)
+, -> -1
+identifier -> (3, 0)
+<= -> -1
+identifier -> (2, 0)
+, -> -1
+identifier -> (3, 0)
+:= -> -1
+identifier -> (3, 0)
++ -> -1
+constant -> (1, 0)
+| -> -1
+[ -> -1
+| -> -1
+identifier -> (4, 0)
+:= -> -1
+identifier -> (4, 0)
+* -> -1
+identifier -> (0, 0)
+| -> -1
+| -> -1
+identifier -> (0, 0)
+:= -> -1
+identifier -> (0, 0)
++ -> -1
+constant -> (2, 1)
+| -> -1
+] -> -1
+| -> -1
+skriva -> -1
+identifier -> (4, 0)
+| -> -1
+] -> -1
