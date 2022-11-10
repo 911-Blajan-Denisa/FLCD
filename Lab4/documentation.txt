@@ -1,3 +1,6 @@
+Link GitHub: https://github.com/911-Blajan-Denisa/FLCD.git
+
+
 The finite automata is an abstract machine that has five elements (states, alphabet, transitions, initial state, final states).
 
 Checking that the FA is a DFA we use the sets of values provided by the transitions map,
