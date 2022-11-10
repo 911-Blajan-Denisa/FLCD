@@ -1,0 +1,15 @@
+Finite Automata(FA) is the simplest machine to recognize patterns.
+The finite automata or finite state machine is an abstract machine that has five elements or tuples.
+It has a set of states and rules for moving from one state to another, but it depends upon the applied input symbol.
+Basically, it is an abstract model of a digital computer. The following figure shows some essential features of general automation.
+Checking that the Finite Automata is Deterministic is done by going through all the keys, and looking if there is any list with a length greater than one.
+
+
+Checking that the FA is a DFA: using the sets of values provided by the transitions map,
+we check that each key has as value a set of length not longer than 1, returning true or false accordingly.
+
+Checking that a sequence is accepted by the DFA: starting from the initial state, we go through each character of the
+given sequence, and we check that the Pair formed by the current state and the value given by the
+current character in the sequence is mapped to a set containing exactly one value; this value will be the new current state in the next iteration.
+If the Pair is not mapped to any set, then the sequence is not accepted by the DFA and the algorithm stops, returning false.
+When we reach the end of the sequence, if the last state belongs to the set of final states, then the sequence is accepted by the DFA and the method returns true.
