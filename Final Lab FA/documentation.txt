@@ -1,0 +1,24 @@
+Link GitHub: https://github.com/911-Blajan-Denisa/FLCD.git
+
+
+The finite automata is an abstract machine that has five elements (states, alphabet, transitions, initial state, final states).
+
+Checking that the FA is a DFA we use the sets of values provided by the transitions map,
+we check that each key has as value a set of length not longer than 1, returning true or false.
+
+Checking that a sequence is accepted by the DFA: starting from the initial state, we go through each character of the given sequence, and we check that the pair formed by the current state and the value given by the current character in the sequence is correct to a set containing exactly one value, this value will be the new current state in the next iteration. If the pair is not correct, then the sequence is rejected by the DFA and the algorithm stops, printing the message 'Rejected'. When we reach the end of the sequence, if the last state belongs to the set of final states, then the sequence is accepted by the DFA and the method prints the message 'Accepted'.
+
+
+BNF:
+
+letter ::= "A" | "B" | ...| "Z" | "a" | ... | "b"
+digit = "0" | non_zero_digit
+non_zero_digit = "1" | ... | "9"
+alphabet_char ::= letter | digit
+state ::= letter
+transition ::= state alphabet state
+states ::= {state}+
+alphabet ::= {alphabet_char}+
+initial_state ::= state
+final_states ::= {state}+
+FA_file ::= states "\n" alphabet "\n" initial_state "\n" final_states
