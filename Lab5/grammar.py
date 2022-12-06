@@ -57,7 +57,7 @@ class Grammar:
 
 if __name__ == '__main__':
     g = Grammar()
-    g.loadFromFile("G1.txt")
+    g.loadFromFile("G2.txt")
     g.printStartingSymbol()
     g.printNonTerminals()
     g.printTerminals()
